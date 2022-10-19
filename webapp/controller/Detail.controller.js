@@ -19,8 +19,13 @@ sap.ui.define(
         this.setData(id);
       },
       setData: function (id) {
-        const that = this;
         const oModel = new JSONModel("./cars.json", true);
+        oModel.read("/Detail(" + id + ")", {
+          success: function (JSONModel) {
+            const data = new JSONModel(oModel);
+            this.getView().setModel(data, "car");
+          },
+        });
       },
       onYou: function () {
         this.byId("you").setText("Actual owner:you");

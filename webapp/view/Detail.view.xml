@@ -8,37 +8,37 @@
                 <VBox class="sapUiSmallMargin" justifyContent="Start">
                     <HBox justifyContent="Start">
                         <items>
-                            <Image src="{cars>Image}"/>
+                            <Image src="{car>Image}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Car:{cars>Team} {cars>Model}"/>
+                            <Text text="Car:{car>Team} {car>Model}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Year:{cars>Year}" />
+                            <Text text="Year:{car>Year}" />
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Color:{cars>color}"/>
+                            <Text text="Color:{car>color}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Horse Power: {cars>horsepw} "/>
+                            <Text  text="Horse Power: {car>horsepw} "/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Price:{cars>Price}"/>
+                            <Text text="Price:{car>Price}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Actual owner: {cars>Owner} "/>
+                            <Text  text="Actual owner: {car>Owner} "/>
                         </items>
                     </HBox>
                 </VBox>
