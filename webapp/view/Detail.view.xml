@@ -41,6 +41,11 @@
                             <Text  text="Actual owner: {car>Owner} "/>
                         </items>
                     </HBox>
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text  text="Lap Time: {car>lap} "/>
+                        </items>
+                    </HBox>
                 </VBox>
             </f:content>
         </f:Card>
