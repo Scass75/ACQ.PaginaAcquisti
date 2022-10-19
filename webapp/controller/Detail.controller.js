@@ -21,15 +21,10 @@ sap.ui.define(
       setData: function (id) {
         const oModel = new JSONModel("./cars.json", true);
         oModel.read("/Detail(" + id + ")", {
-          success: function (JSONModel) {
-            const data = new JSONModel(oModel);
-            this.getView().setModel(data, "car");
+          success: function () {
+            this.getView().setModel(oModel, "car");
           },
         });
-      },
-      onYou: function () {
-        this.byId("you").setText("Actual owner:you");
-        this.setData(id);
       },
       onBack: function () {
         var oRouter = this.getOwnerComponent().getRouter();
