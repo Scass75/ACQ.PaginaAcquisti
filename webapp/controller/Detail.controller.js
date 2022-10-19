@@ -2,9 +2,8 @@ sap.ui.define(
   [
     "sap/ui/core/mvc/Controller",
     "sap/ui/model/json/JSONModel",
-    "sap/ui/core/Fragment",
   ],
-  function (Controller, JSONModel, Fragment) {
+  function (Controller, JSONModel) {
     "use strict";
     return Controller.extend("ACQ.PaginaAcquisti.controller.Detail", {
       onInit: function () {
@@ -22,7 +21,8 @@ sap.ui.define(
         const oModel = new JSONModel("./cars.json", true);
         oModel.read("/Detail(" + id + ")", {
           success: function () {
-            this.getView().setModel(oModel, "car");
+            const data = new JSONModel(oModel);
+            this.getView().setModel(data, "car");
           },
         });
       },

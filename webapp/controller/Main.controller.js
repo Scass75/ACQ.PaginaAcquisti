@@ -53,6 +53,7 @@ sap.ui.define([
   },
   onLogSucc : function(){
       var oRouter = this.getOwnerComponent().getRouter()
+      alert("Now you will be able to se the cars,that are going to partecipate to the race in Monza")
       oRouter.navTo("home");
   }
   });
