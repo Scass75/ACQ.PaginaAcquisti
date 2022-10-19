@@ -1,0 +1,13 @@
+{
+  "generator-ui5-app": {
+    "application": "PaginaAcquisti",
+    "namespace": "ACQ",
+    "framework": "SAPUI5",
+    "frameworkVersion": "1.107.0",
+    "author": "Flavio Vento",
+    "initrepo": false,
+    "appId": "ACQ.PaginaAcquisti",
+    "appURI": "ACQ/PaginaAcquisti",
+    "setupCompleted": true
+  }
+}
