@@ -274,5 +274,17 @@
     "Image": "https://cdn.motor1.com/images/mgl/xqq24z/s1/novitec-ferrari-sf90-stradale-2022.jpg",
     "horsepw": 1001,
     "lap":"1.51.900"
+  },
+  {
+    "id": 24,
+    "Team": "Ferrari",
+    "Model": "SF1000",
+    "Year": 2020,
+    "color": "Red",
+    "Price": "€5,00",
+    "Owner": "Flavio Vento",
+    "Image": "https://www.oasport.it/wp-content/uploads/2020/08/LP_11664480-640x350.jpg",
+    "horsepw": 10,
+    "lap":"09.00.59.111"
   }
 ]
