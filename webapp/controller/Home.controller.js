@@ -44,9 +44,9 @@ sap.ui.define(
           oTable.setBusy(false);
         },
         onClear: function () {
-          this.byId("fbName").setValue();
+          this.byId("filterID").setSelectedKeys();
           this.byId("fbProd").setValue();
-          this.byId("fbData").setValue();
+          this.byId("fbData").setSelectedKeys();
           this.byId("fbCol").setValue();
           this.onSearch();
         },

@@ -43,7 +43,7 @@
         <footer>
             <Bar design="Footer">
                 <contentMiddle>
-                    <Link text="Click Here to see the track" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Monza_Map-2021.png/1200px-Monza_Map-2021.png"/>
+                    <Link text="Click Here to see the track map" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Monza_Map-2021.png/1200px-Monza_Map-2021.png"/>
                 </contentMiddle>
             </Bar>
         </footer>

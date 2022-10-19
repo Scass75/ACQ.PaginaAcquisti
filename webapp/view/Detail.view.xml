@@ -43,7 +43,7 @@
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Lap Time: {car>lap} "/>
+                            <Text  text="Predicted Lap Time: {car>lap} "/>
                         </items>
                     </HBox>
                 </VBox>
