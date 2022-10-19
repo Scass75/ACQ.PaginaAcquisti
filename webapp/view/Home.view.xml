@@ -30,7 +30,7 @@
                             <Input id="fbProd" placeholder="Insert a brand..." change="onSearch" liveChange="onSearch" />
                         </fb:control>
                     </fb:FilterGroupItem>
-                    <fb:FilterGroupItem groupName="FILTERS" name="Date" label="Year of shipment" visibleInFilterBar="true">
+                    <fb:FilterGroupItem groupName="FILTERS" name="Date" label="Year of fabbrication" visibleInFilterBar="true">
                         <fb:control>
                             <MultiComboBox id="fbData" selectionChange="onSearch" selectionFinish="onSearch" items="{cars>/}">
                                 <core:Item key="{cars>Year}" text="{cars>Year}" />
@@ -77,7 +77,7 @@
                      </ColumnListItem>
                   </items>
                </Table> -->
-                    <f:GridList id="gridList" items="{cars>/}">
+                    <f:GridList id="gridList" items="{cars>/}" growingThreshold="12">
                         <f:customLayout>
                             <grid:GridBoxLayout boxMinWidth="17rem" />
                         </f:customLayout>
@@ -87,7 +87,7 @@
                                     <FlexItemData growFactor="1" shrinkFactor="0" />
                                 </layoutData>
                                 <Title text="Id:{cars>id}" wrapping="true" />
-                                    <Image  src="{cars>Image}" height="50px" />
+                                    <Image  src="{cars>Image}" height="100px" />
                                 <Label text="Car:{cars>Team} {cars>Model}" wrapping="true" />
                                 <Label text="Year:{cars>Year}" wrapping="true" />
                                 <Label text="Color:{cars>color}" wrapping="true" />
