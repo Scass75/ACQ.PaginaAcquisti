@@ -10,7 +10,8 @@
                     <Title text="Cars partecipating the race" wrapping="true" />
                 </u:snappedHeading>
                 <u:actions>
-                    <Button icon="sap-icon://log" id="LogOut" press="onBack1" type="Emphasized" />
+                    <Button icon="https://cdn-icons-png.flaticon.com/512/5029/5029739.png" press="onDrivers" type="Transparent"/>
+                    <Button icon="sap-icon://log" id="LogOut" press="onBack1" type="Transparent" />
                 </u:actions>
             </u:ObjectPageDynamicHeaderTitle>
         </u:headerTitle>

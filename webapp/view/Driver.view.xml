@@ -1,0 +1,60 @@
+<mvc:View xmlns:f="sap.f" xmlns:u="sap.uxap" xmlns:core="sap.ui.core" controllerName="ACQ.PaginaAcquisti.controller.Driver" xmlns="sap.m" xmlns:fb="sap.ui.comp.filterbar" xmlns:grid="sap.ui.layout.cssgrid" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    <u:ObjectPageLayout enableLazyLoading="true" showTitleInHeaderContent="true" selectedSection="paymentSubSection" useIconTabBar="true" upperCaseAnchorBar="false">
+        <!-- Header -->
+        <u:headerTitle>
+            <u:ObjectPageDynamicHeaderTitle>
+                <u:expandedHeading>
+                    <Title text="Cars partecipating the race" wrapping="true" />
+                </u:expandedHeading>
+                <u:snappedHeading>
+                    <Title text="Cars partecipating the race" wrapping="true" />
+                </u:snappedHeading>
+                <u:actions>
+                    <Button icon="sap-icon://log" id="LogOut" press="onBack1" type="Emphasized" />
+                </u:actions>
+            </u:ObjectPageDynamicHeaderTitle>
+        </u:headerTitle>
+        <!-- Filter Bar -->
+        <u:headerContent>
+            <fb:FilterBar showFilterConfiguration="false" showGoOnFB="false" showClearOnFB="true" useToolbar="false" search="onSearch" clear="onClear" position="Center">
+                <fb:filterGroupItems>
+                    <fb:FilterGroupItem groupName="FILTERS" name="Produttore" label="Driver" visibleInFilterBar="true">
+                        <fb:control>
+                            <Input id="fbProd" placeholder="Insert a driver name..." change="onSearch" liveChange="onSearch" />
+                        </fb:control>
+                    </fb:FilterGroupItem>
+                    <fb:FilterGroupItem groupName="FILTERS" name="Name" label="Number" visibleInFilterBar="true">
+                        <fb:control>
+                            <MultiComboBox id="filterID" selectionChange="onSearch" selectionFinish="onSearch" items="{user>/}">
+                                <core:Item key="{user>number}" text="{user>number}" />
+                            </MultiComboBox>
+                        </fb:control>
+                    </fb:FilterGroupItem>
+                </fb:filterGroupItems>
+            </fb:FilterBar>
+        </u:headerContent>
+        <!-- Table -->
+        <u:sections>
+            <u:ObjectPageSection showTitle="false">
+                <u:ObjectPageSubSection>
+                    <f:GridList id="gridList" items="{user>/}" growingThreshold="10">
+                        <f:customLayout>
+                            <grid:GridBoxLayout boxMinWidth="20rem" />
+                        </f:customLayout>
+                        <f:GridListItem id="mainTable" type="Navigation" press="onDetail">
+                            <VBox class="sapUiSmallMargin">
+                                <layoutData>
+                                    <FlexItemData growFactor="1" shrinkFactor="0" />
+                                </layoutData>
+                                <Title text="Id:{user>id}" wrapping="true" />
+                                <Image src="{user>avatar}" height="50px" />
+                                <Label text="Driver: {user>Driver}" wrapping="true" />
+                                <Label text="Number: {user>number}" wrapping="true" />
+                            </VBox>
+                        </f:GridListItem>
+                    </f:GridList>
+                </u:ObjectPageSubSection>
+            </u:ObjectPageSection>
+        </u:sections>
+    </u:ObjectPageLayout>
+</mvc:View>

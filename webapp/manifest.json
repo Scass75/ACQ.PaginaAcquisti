@@ -88,6 +88,11 @@
           "pattern": "detail(car_{cars})",
           "name": "detail",
           "target": "detail"
+        },
+        {
+          "pattern": "driver",
+          "name": "driver",
+          "target": "driver"
         }
       ],
       "targets": {
@@ -102,6 +107,10 @@
         "detail": {
           "viewId": "detail",
           "viewName": "Detail"
+        },
+        "driver": {
+          "viewId": "driver",
+          "viewName": "Driver"
         }
       }
     },

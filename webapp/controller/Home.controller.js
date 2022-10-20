@@ -61,6 +61,10 @@ sap.ui.define(
           var oRouter = this.getOwnerComponent().getRouter();
           oRouter.navTo("main");
         },
+        onDrivers: function () {
+          var oRouter = this.getOwnerComponent().getRouter();
+          oRouter.navTo("driver");
+        },
       });
     }
   );
