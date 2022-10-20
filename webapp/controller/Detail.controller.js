@@ -18,13 +18,8 @@ sap.ui.define(
         this.setData(id);
       },
       setData: function (id) {
-        const oModel = new JSONModel("./cars.json", true);
-        oModel.read("/Detail(" + id + ")", {
-          success: function () {
-            const data = new JSONModel(oModel);
-            this.getView().setModel(data, "car");
-          },
-        });
+        var car = this.getView().getModel("cars").oData[id-1];
+        this.getView().setModel( new JSONModel(car),"car")
       },
       onBack: function () {
         var oRouter = this.getOwnerComponent().getRouter();

@@ -1,6 +1,6 @@
 <mvc:View controllerName="ACQ.PaginaAcquisti.controller.Detail" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:card="sap.f.cards" xmlns:f="sap.f">
     <Page showHeader="true" showNavButton="true" navButtonPress="onBack">
-        <f:Card class="sapUiMediumMargin" width="350px" height="300px" headerPosition="Top">
+        <f:Card class="sapUiMediumMargin" width="550px" height="500px" headerPosition="Top">
             <f:header>
                 <card:Header id="detail" iconSrc="https://thumbs.dreamstime.com/b/la-progettazione-automatica-di-logo-del-concessionario-auto-con-il-concetto-mette-mostra-la-siluetta-del-veicolo-87968244.jpg" />
             </f:header>
@@ -8,42 +8,42 @@
                 <VBox class="sapUiSmallMargin" justifyContent="Start">
                     <HBox justifyContent="Start">
                         <items>
-                            <Image src="{car>Image}"/>
+                            <Image src="{car>/Image}" width="350px" />
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Car:{car>Team} {car>Model}"/>
+                            <Text text="Car:{car>/Team} {car>Model}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Year:{car>Year}" />
+                            <Text text="Year:{car>/Year}" />
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Color:{car>color}"/>
+                            <Text text="Color:{car>/color}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Horse Power: {car>horsepw} "/>
+                            <Text  text="Horse Power: {car>/horsepw} "/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Price:{car>Price}"/>
+                            <Text text="Price:{car>/Price}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Actual owner: {car>Owner} "/>
+                            <Text  text="Actual owner: {car>/Owner} "/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Predicted Lap Time: {car>lap} "/>
+                            <Text  text="Predicted Lap Time: {car>/lap} "/>
                         </items>
                     </HBox>
                 </VBox>
