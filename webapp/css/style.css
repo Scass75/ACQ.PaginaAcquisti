@@ -10,9 +10,7 @@ html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
   display: inline-block;
   font-weight: bold;
 }
-.sapMPage>section.sapMPageEnableScrolling{
-  text-align: center !important;
-}
+
 #title1-inner {
   margin-left: 875px;
 }
@@ -22,4 +20,7 @@ html[dir="rtl"] .myAppDemoWT .myCustomButton.sapMBtn {
 }
 .sapMLIBShowSeparator>td {
   border-top: 0px #e5e5e5;
+}
+.img{
+  background-image: url("https://wallpapercave.com/wp/wp6991641.jpg");
 }
