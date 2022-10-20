@@ -1,4 +1,4 @@
-<mvc:View controllerName="ACQ.PaginaAcquisti.controller.Main" displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:card="sap.f.cards" xmlns:f="sap.f">
+<mvc:View controllerName="ACQ.PaginaAcquisti.controller.Main"  displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:card="sap.f.cards" xmlns:f="sap.f">
     <Page id="login" showHeader="false" class="img">
         <f:Card class="sapUiMediumMargin" width="350px" height="450px" headerPosition="Top">
             <f:header>
@@ -35,6 +35,66 @@
                     <HBox justifyContent="Center">
                         <items>
                             <Button id="go" text="Log In" width="300px" press=".onLogin" type="Emphasized" />
+                        </items>
+                    </HBox>
+                </VBox>
+            </f:content>
+        </f:Card>
+        <f:Card class="Bruh" width="350px" height="450px" headerPosition="Top">
+            <f:header>
+                <card:Header title="Monza" subtitle="Il tempio della velocita'"/>
+            </f:header>
+            <f:content>
+                <VBox class="sapUiSmallMargin"  justifyContent="Center">
+                    <HBox justifyContent="Center">
+                        <items>
+                            <Image src="Mnz-map-4.png" width="200px" />
+                        </items>
+                    </HBox>
+                    
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text text="Lunghezza:5793 metri." />
+                        </items>
+                    </HBox>
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text text="_______________________________________" />
+                        </items>
+                    </HBox>
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text wrapping="true" text="Velocita Massima nel 2005 uguale a 370,1 km/h stabilito da Kimi Raikkonen." />
+                        </items>
+                    </HBox>
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text text="_______________________________________" />
+                        </items>
+                    </HBox>
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text wrapping="true" text="Curve: 11." />
+                        </items>
+                    </HBox>
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text text="_______________________________________" />
+                        </items>
+                    </HBox>
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text text="Record Tempo sul giro in qualifica : 1'18'887 con una velocita media di 264,362, stabilito da Lewis Hamilton nel 2020." />
+                        </items>
+                    </HBox>
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text text="_______________________________________" />
+                        </items>
+                    </HBox>
+                    <HBox justifyContent="Start">
+                        <items>
+                            <Text text="Mentre il giro veloce in gara e stato stabilito da Rubens Barrichello nel 2004 con un tempo di 1'21'046." />
                         </items>
                     </HBox>
                 </VBox>
