@@ -4,10 +4,10 @@
         <u:headerTitle>
             <u:ObjectPageDynamicHeaderTitle>
                 <u:expandedHeading>
-                    <Title text="Home" wrapping="true" />
+                    <Title text="Cars partecipating the race" wrapping="true" />
                 </u:expandedHeading>
                 <u:snappedHeading>
-                    <Title text="Home" wrapping="true" />
+                    <Title text="Cars partecipating the race" wrapping="true" />
                 </u:snappedHeading>
                 <u:actions>
                     <Button icon="sap-icon://log" id="LogOut" press="onBack1" type="Emphasized" />

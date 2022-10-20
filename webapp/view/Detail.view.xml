@@ -13,27 +13,27 @@
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Car:{car>/Team} {car>Model}"/>
+                            <Text text="Car: {car>/Team} {car>/Model}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Year:{car>/Year}" />
+                            <Text text="Year: {car>/Year}" />
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Color:{car>/color}"/>
+                            <Text text="Color: {car>/color}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Horse Power: {car>/horsepw} "/>
+                            <Text  text="Horse Power: {car>/horsepw}hp "/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Price:{car>/Price}"/>
+                            <Text text="Price: {car>/Price}"/>
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
