@@ -14,7 +14,7 @@ sap.ui.define(
       },
       onRouteMatched: function (oEvent) {
         const id = oEvent.getParameter("arguments").cars;
-        this.byId("detail").setTitle("Selected car id : " + id);
+        this.byId("detail").setTitle("Selected car id: " + id);
         this.setData(id);
       },
       setData: function (id) {
