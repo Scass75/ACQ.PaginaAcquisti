@@ -52,6 +52,7 @@
                                 <Label text="Driver: {user>Driver}" wrapping="true" />
                                 <Label text="Number: {user>number}" wrapping="true" />
                                 <Label text="Car: {user>car}" wrapping="true" />
+                                <Label text="{user>time}" wrapping="true" />
                             </VBox>
                         </f:GridListItem>
                     </f:GridList>
