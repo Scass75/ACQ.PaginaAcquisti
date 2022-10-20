@@ -4,13 +4,13 @@
         <u:headerTitle>
             <u:ObjectPageDynamicHeaderTitle>
                 <u:expandedHeading>
-                    <Title text="Cars partecipating the race" wrapping="true" />
+                    <Title text="Cars partecipated at the race" wrapping="true" />
                 </u:expandedHeading>
                 <u:snappedHeading>
-                    <Title text="Cars partecipating the race" wrapping="true" />
+                    <Title text="Cars partecipated at the race" wrapping="true" />
                 </u:snappedHeading>
                 <u:actions>
-                    <Button icon="https://cdn-icons-png.flaticon.com/512/5029/5029739.png" press="onDrivers" type="Transparent"/>
+                    <Button icon="https://cdn-icons-png.flaticon.com/512/5029/5029739.png" text="Res" press="onDrivers" type="Transparent"/>
                     <Button icon="sap-icon://log" id="LogOut" press="onBack1" type="Transparent" />
                 </u:actions>
             </u:ObjectPageDynamicHeaderTitle>
