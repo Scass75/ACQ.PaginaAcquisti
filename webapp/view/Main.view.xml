@@ -1,5 +1,8 @@
-<mvc:View controllerName="ACQ.PaginaAcquisti.controller.Main"  displayBlock="true" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:card="sap.f.cards" xmlns:f="sap.f">
+<mvc:View controllerName="ACQ.PaginaAcquisti.controller.Main" height="100%" displayBlock="false" xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core" xmlns:card="sap.f.cards" xmlns:f="sap.f">
     <Page id="login" showHeader="false" class="img">
+        <!-- <f:SidePanel id="mySidePanel" toggle="onToggle">
+				<f:mainContent>
+					<VBox class="sapUiSmallMarginTopBottom"> -->
         <f:Card class="sapUiMediumMargin" width="350px" height="450px" headerPosition="Top">
             <f:header>
                 <card:Header title="LOGON" subtitle="Insert your Email and Password" iconSrc="sap-icon://account" />
@@ -40,18 +43,31 @@
                 </VBox>
             </f:content>
         </f:Card>
+        <!-- </VBox>
+				</f:mainContent>
+				<f:items>
+					<f:SidePanelItem icon="sap-icon://building" text="Go to office">
+						<VBox>
+							<Text text="Static Content" class="sapUiSmallMarginBottom" />
+							<Text text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+							<Switch />
+							<Button text="Press me" />
+						</VBox>
+					</f:SidePanelItem>
+				</f:items>
+			</f:SidePanel> -->
         <f:Card class="Bruh" width="350px" height="450px" headerPosition="Top">
             <f:header>
-                <card:Header title="Monza" subtitle="Il tempio della velocita'"/>
+                <card:Header title="Monza" subtitle="Il tempio della velocita'" />
             </f:header>
             <f:content>
-                <VBox class="sapUiSmallMargin"  justifyContent="Center">
+                <VBox class="sapUiSmallMargin" justifyContent="Center">
                     <HBox justifyContent="Center">
                         <items>
                             <Image src="Mnz-map-4.png" width="200px" />
                         </items>
                     </HBox>
-                    
+
                     <HBox justifyContent="Start">
                         <items>
                             <Text text="Lunghezza:5793 metri." />
@@ -103,7 +119,7 @@
         <footer>
             <Bar design="Footer">
                 <contentMiddle>
-                    <Link text="Click Here to see the track map" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Monza_Map-2021.png/1200px-Monza_Map-2021.png"/>
+                    <Link text="Click Here to see the track map" href="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Monza_Map-2021.png/1200px-Monza_Map-2021.png" />
                 </contentMiddle>
             </Bar>
         </footer>

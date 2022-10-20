@@ -10,7 +10,7 @@
                     <Title text="Driver standings after Monza race" wrapping="true" />
                 </u:snappedHeading>
                 <u:actions>
-                    <Button icon="https://cdn-icons-png.flaticon.com/512/1085/1085961.png" id="onCar" press="onBack" type="Transparent" />
+                    <Button icon="https://cdn-icons-png.flaticon.com/512/1085/1085961.png" text="Car" id="onCar" press="onBack" type="Transparent" />
                     <Button icon="sap-icon://log" id="LogOut" press="onBack1" type="Transparent" />
                 </u:actions>
             </u:ObjectPageDynamicHeaderTitle>
