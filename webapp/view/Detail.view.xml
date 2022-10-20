@@ -13,7 +13,7 @@
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Car: {car>/Team} {car>/Model}"/>
+                            <Text text="Car: {car>/Team} {car>/Model}" />
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
@@ -23,27 +23,27 @@
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Color: {car>/color}"/>
+                            <Text text="Color: {car>/color}" />
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Horse Power: {car>/horsepw}hp "/>
+                            <Text text="Horse Power: {car>/horsepw}hp " />
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text text="Price: {car>/Price}"/>
+                            <Text text="Price: {car>/Price}" />
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Actual owner: {car>/Owner} "/>
+                            <Text text="Actual owner: {car>/Owner} " />
                         </items>
                     </HBox>
                     <HBox justifyContent="Start">
                         <items>
-                            <Text  text="Predicted Lap Time: {car>/lap} "/>
+                            <Text text="Predicted Lap Time: {car>/lap} " />
                         </items>
                     </HBox>
                 </VBox>
@@ -52,7 +52,7 @@
         <footer>
             <Bar design="Footer">
                 <contentLeft>
-                    <Button  icon="sap-icon://log" press="onBack1"/>
+                    <Button icon="sap-icon://log" press="onBack1" />
                 </contentLeft>
             </Bar>
         </footer>

@@ -49,45 +49,17 @@
         <u:sections>
             <u:ObjectPageSection showTitle="false">
                 <u:ObjectPageSubSection>
-                    <!-- <Table id="mainTable" items="{cars>/}" growing="true" growingScrollToLoad="true" backgroundDesign="Translucent" growingThreshold="25">
-                  <columns>
-                     <Column hAlign="Center">
-                        <Label text="ID" />
-                     </Column>
-                     <Column hAlign="Center">
-                        <Label text="Car" />
-                     </Column>
-                     <Column hAlign="Center">
-                        <Label text="Year" />
-                     </Column>
-                     <Column hAlign="Center">
-                        <Label text="Color" />
-                     </Column>
-                     <Column hAlign="Center">
-                        <Label text="Price" />
-                     </Column>
-                  </columns>
-                  <items>
-                     <ColumnListItem type="Navigation" press="onDetail">
-                        <ObjectStatus text="{cars>id}" />
-                        <Text text="{cars>Team} {cars>Model}" />
-                        <Text text="{cars>Year}"/>
-                        <Text text="{cars>color}" />
-                        <Text text="{cars>Price}"/>
-                     </ColumnListItem>
-                  </items>
-               </Table> -->
-                    <f:GridList id="gridList" items="{cars>/}" growingThreshold="12">
+                    <f:GridList id="gridList" items="{cars>/}" growingThreshold="10">
                         <f:customLayout>
-                            <grid:GridBoxLayout boxMinWidth="17rem" />
+                            <grid:GridBoxLayout boxMinWidth="20rem" />
                         </f:customLayout>
-                        <f:GridListItem id="mainTable" type="Navigation" press="onDetail">  
+                        <f:GridListItem id="mainTable" type="Navigation" press="onDetail">
                             <VBox class="sapUiSmallMargin">
                                 <layoutData>
                                     <FlexItemData growFactor="1" shrinkFactor="0" />
                                 </layoutData>
                                 <Title text="Id:{cars>id}" wrapping="true" />
-                                    <Image  src="{cars>Image}" height="100px" />
+                                <Image src="{cars>Image}" height="125px" />
                                 <Label text="Car:{cars>Team} {cars>Model}" wrapping="true" />
                                 <Label text="Year:{cars>Year}" wrapping="true" />
                                 <Label text="Color:{cars>color}" wrapping="true" />

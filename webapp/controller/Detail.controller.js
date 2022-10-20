@@ -1,8 +1,5 @@
 sap.ui.define(
-  [
-    "sap/ui/core/mvc/Controller",
-    "sap/ui/model/json/JSONModel",
-  ],
+  ["sap/ui/core/mvc/Controller", "sap/ui/model/json/JSONModel"],
   function (Controller, JSONModel) {
     "use strict";
     return Controller.extend("ACQ.PaginaAcquisti.controller.Detail", {
@@ -18,8 +15,8 @@ sap.ui.define(
         this.setData(id);
       },
       setData: function (id) {
-        var car = this.getView().getModel("cars").oData[id-1];
-        this.getView().setModel( new JSONModel(car),"car")
+        var car = this.getView().getModel("cars").oData[id - 1];
+        this.getView().setModel(new JSONModel(car), "car");
       },
       onBack: function () {
         var oRouter = this.getOwnerComponent().getRouter();
